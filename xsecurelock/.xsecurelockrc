@@ -1,0 +1,7 @@
+# Blank lock screen
+export XSECURELOCK_BLANK_DPMS_STATE=on
+export XSECURELOCK_SAVER="${XSECURELOCK_SAVER:-saver_blank}"
+
+# Allow pausing music in lock screen
+export XSECURELOCK_KEY_XF86Favorites_COMMAND="playerctl play-pause"
+export XSECURELOCK_KEY_XF86AudioPlay_COMMAND="playerctl play-pause"

@@ -1,0 +1,8 @@
+profile {
+	output HDMI-A-1 enable scale 2
+	output eDP-1 disable
+}
+
+profile {
+	output eDP-1 enable scale 2
+}

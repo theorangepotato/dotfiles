@@ -1,0 +1,5 @@
+alias inst="sudo apt install -y"
+alias upgr="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+alias vi="nvim"
+alias vim="nvim"
+alias fd="fdfind"
