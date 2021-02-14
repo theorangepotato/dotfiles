@@ -16,9 +16,19 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+# set PATH to include guix, if it exists
+if [ -d "$HOME/.guix-profile/bin" ] ; then
+    PATH="$HOME/.guix-profile/bin${PATH:+:}$PATH"
+fi
+
+# set PATH to include flatpak, if it exists
+if [ -d "/var/lib/flatpak/exports/bin" ] ; then
+    PATH="/var/lib/flatpak/exports/bin:$PATH"
+fi
+
+# set PATH so it includes cargo's bin if it exists
+if [ -d "$HOME/.cargo/bin" ] ; then
+    PATH="$HOME/.cargo/bin:$PATH"
 fi
 
 # set PATH so it includes user's private bin if it exists
@@ -26,9 +36,9 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# set PATH so it includes cargo's bin if it exists
-if [ -d "$HOME/.cargo/bin" ] ; then
-    PATH="$HOME/.cargo/bin:$PATH"
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
 fi
 
 export EDITOR="nvim"
