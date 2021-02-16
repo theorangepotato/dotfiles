@@ -114,8 +114,8 @@ input type:touchpad {
     bindsym --locked XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $($HOME/bin/get_sink) -5%
 
     # Brightness controls
-    bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 10
-    bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 10
+    bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 5
+    bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 #
 # Moving around:
