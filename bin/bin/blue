@@ -1,0 +1,22 @@
+/home/austin/bin/helpers/bluetooth_connect.sh
+
+pactl list cards
+read -p "Which card is your earbuds? " answer
+
+read -p "A2DP or HSP (a/h)? " protocol_answer
+
+protocol=""
+case $protocol_answer in
+	[aA] ) protocol="a2dp_sink"
+		;;
+	[hH] ) protocol="headset_head_unit"
+		;;
+	* ) echo "Unknown protocol. Exiting."
+		exit;
+esac
+
+case $answer in
+	[0-9]|[0-9][0-9]|[0-9][0-9][0-9] ) pacmd set-card-profile $answer $protocol #headset_head_unit #a2dp_sink
+		;;
+	* ) echo "Not a number: $answer"
+esac
