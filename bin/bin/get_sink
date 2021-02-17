@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if pacmd list-sinks |
-    grep -xqF "  * index: 5"
-then
-    echo 5
-else
-    echo 4
-fi
