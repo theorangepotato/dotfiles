@@ -1,0 +1,24 @@
+# bash
+fdfind
+neovim
+sdcv
+exa *
+bat *
+
+# kitty
+kitty
+
+# sway
+sway
+swayidle
+waybar
+kanshi
+j4-dmenu-desktop
+gir1.2-playerctl-2.0
+light
+
+# tmux
+tmux
+
+# xsecurelock
+xsecurelock
