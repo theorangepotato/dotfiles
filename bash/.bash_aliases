@@ -10,7 +10,7 @@ alias ls='exa'
 alias ssh='kitty +kitten ssh'
 alias vpn='sudo wg-quick up wg0'
 alias vpnd='sudo wg-quick down wg0'
-alias cat='bat'
+alias cat='bat -p'
 alias less='bat --paging always'
 alias clh='history -c && exit'
 
