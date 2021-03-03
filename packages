@@ -17,6 +17,7 @@ wofi
 gir1.2-playerctl-2.0
 playerctl
 light
+dusnt
 
 # tmux
 tmux

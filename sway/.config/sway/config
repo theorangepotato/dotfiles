@@ -277,3 +277,4 @@ include /etc/sway/config.d/*
 #
 exec --no-startup-id light -N 1
 exec_always pkill kanshi; exec kanshi
+exec dunst
