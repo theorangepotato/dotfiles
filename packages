@@ -13,7 +13,7 @@ sway
 swayidle
 waybar
 kanshi
-j4-dmenu-desktop
+wofi
 gir1.2-playerctl-2.0
 playerctl
 light

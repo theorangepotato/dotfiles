@@ -19,8 +19,7 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu j4-dmenu-desktop --dmenu="(cat ; (stest -flx $(echo $PATH | tr : ' ') | sort -u)) | dmenu -i" | xargs swaymsg exec --
+set $menu "wofi --show drun,run --allow-images -i"
 
 # Lock command
 set $lock swaylock -F -f -c 000000
