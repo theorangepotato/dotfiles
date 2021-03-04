@@ -42,7 +42,7 @@ window#waybar.solo {
     border-bottom: 3px solid white;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor, #custom-weather {
     padding: 0 10px;
     margin: 0 4px;
 }

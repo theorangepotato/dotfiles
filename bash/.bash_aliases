@@ -13,6 +13,7 @@ alias vpnd='sudo wg-quick down wg0'
 alias cat='bat -p'
 alias less='bat --paging always'
 alias clh='history -c && exit'
+alias weather='curl https://wttr.in/ 2> /dev/null | head -n -1'
 
 # Functions
 function set-title() {
