@@ -102,13 +102,21 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+if [ -f ~/.bash_funcs ]; then
+    . ~/.bash_funcs
 fi
 
 # Include work functions / aliases / etc.
-if [ -f ~/.bash_work ]; then
-    . ~/.bash_work
+if [ -f ~/.aliases_work ]; then
+    . ~/.aliases_work
+fi
+
+if [ -f ~/.bash_funcs_work ]; then
+    . ~/.bash_funcs_work
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -142,3 +150,5 @@ source /usr/share/doc/fzf/examples/completion.bash
 
 # Set CTRL+Backspace to be werase instead of CTRL+W
 stty werase ^H
+
+fish
