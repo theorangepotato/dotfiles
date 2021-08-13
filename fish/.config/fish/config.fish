@@ -1,9 +1,13 @@
 #!/bin/fish
 
 if test -e ~/.aliases
-  cat ~/.aliases | source
+  source ~/.aliases
 end
 
 if test -e ~/.aliases_work
-  cat ~/.aliases_work | source
+  source ~/.aliases_work
+end
+
+if test -e ~/.fish_funcs_work.fish
+  source ~/.fish_funcs_work.fish
 end
