@@ -17,8 +17,9 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # set PATH to include guix, if it exists
-if [ -d "$HOME/.guix-profile/bin" ] ; then
-    PATH="$HOME/.guix-profile/bin${PATH:+:}$PATH"
+# old value: $HOME/.guix-profile/bin
+if [ -d "$HOME/.config/guix/current/bin" ] ; then
+    PATH="$HOME/.config/guix/current/bin${PATH:+:}$PATH"
 fi
 
 # set PATH to include flatpak, if it exists

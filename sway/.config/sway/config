@@ -29,7 +29,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg /usr/share/backgrounds/gnome/Road.jpg fill
+output * bg ~/bg.jpg fill
 #
 # Example configuration:
 #

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 /home/austin/bin/helpers/bluetooth_connect.sh
 
 pactl list cards
