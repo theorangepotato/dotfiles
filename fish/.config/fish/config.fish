@@ -11,3 +11,5 @@ end
 if test -e ~/.fish_funcs_work.fish
   source ~/.fish_funcs_work.fish
 end
+
+fish_vi_key_bindings

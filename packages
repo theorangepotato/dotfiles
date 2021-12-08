@@ -1,9 +1,10 @@
-# bash
-fdfind
+# shell
+fish
+fd-find
 neovim
 sdcv
-exa *
-bat *
+exa
+bat
 
 # kitty
 kitty
@@ -22,6 +23,3 @@ fonts-font-awesome
 
 # tmux
 tmux
-
-# xsecurelock
-xsecurelock
