@@ -1,3 +1,6 @@
+# dotfiles
+stow
+
 # shell
 fish
 fd-find
