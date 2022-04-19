@@ -145,9 +145,6 @@ function fx {
 # Enable fzf key bindings
 source /usr/share/doc/fzf/examples/key-bindings.bash
 
-# Enable fzf auto-completion
-source /usr/share/doc/fzf/examples/completion.bash
-
 # Set CTRL+Backspace to be werase instead of CTRL+W
 stty werase ^H
 
