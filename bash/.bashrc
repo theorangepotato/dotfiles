@@ -148,6 +148,10 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 # Set CTRL+Backspace to be werase instead of CTRL+W
 stty werase ^H
 
+if [ -f $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh ]; then
+  . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+fi
+
 # start fish shell
 WHICH_FISH="$(which fish)"
 if [[ "$-" =~ i && -x "${WHICH_FISH}" && ! "${SHELL}" -ef "${WHICH_FISH}" ]]; then
