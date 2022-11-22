@@ -14,14 +14,19 @@ end
 
 fish_vi_key_bindings
 
-set new_paths /var/lib/flatpak/exports/bin $HOME/.config/guix/current/bin $HOME/.cargo/bin $HOME/.local/bin $HOME/bin
- 
+if type -q nvim
+    set -gx EDITOR nvim
+end
+
+if type -q direnv
+    direnv hook fish | source
+end
+
+set new_paths /var/lib/flatpak/exports/share /var/lib/flatpak/exports/bin $HOME/.local/share/flatpak/exports/share $HOME/.config/guix/current/bin $HOME/.cargo/bin $HOME/.local/bin $HOME/bin
+
 for i in $new_paths
     if not contains $i $PATH
+        and test -d $i
         set PATH $i $PATH
     end
 end
-
-set -gx EDITOR nvim
-
-direnv hook fish | source
