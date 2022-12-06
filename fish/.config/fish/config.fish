@@ -30,3 +30,7 @@ for i in $new_paths
         set PATH $i $PATH
     end
 end
+
+if type -q starship
+    starship init fish | source
+end
