@@ -1,0 +1,13 @@
+#!/bin/env bash
+
+if [ $# -ne 1 ]; then
+  echo -e "ERROR: Need exactly one message"
+  exit 1
+fi
+
+if [ -z "$NTFY_URL" ]; then
+  echo -e "ERROR: NTFY_URL is not defined"
+  exit 2
+fi
+
+curl -s -d "$1" https://ntfy.sh/"$NTFY_URL" > /dev/null
