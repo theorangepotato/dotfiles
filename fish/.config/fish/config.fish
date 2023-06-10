@@ -22,6 +22,10 @@ if type -q direnv
     direnv hook fish | source
 end
 
+if test -e /home/austin/.config/guix/current
+    set -gx GUIX_PROFILE "/home/austin/.config/guix/current/etc/profile"
+end
+
 set new_paths /var/lib/flatpak/exports/share /var/lib/flatpak/exports/bin $HOME/.local/share/flatpak/exports/share $HOME/.config/guix/current/bin $HOME/.cargo/bin $HOME/.local/bin $HOME/bin
 
 for i in $new_paths
