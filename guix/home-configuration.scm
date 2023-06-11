@@ -10,6 +10,7 @@
              (gnu services)
              (guix gexp)
 	     (guix packages)
+	     (gnu packages terminals)
 	     (guix download)
 	     (guix build-system copy)
 	     (guix git-download)
@@ -41,25 +42,14 @@
 
 ;; Just the terminfo defined by kitty
 (define kitty-terminfo
-  (package
+  (package (inherit kitty)
     (name "kitty-terminfo")
-    (version "0.20.3")
-    (source
-      (origin
-	(method git-fetch)
-	(uri (git-reference
-	       (url "https://github.com/kovidgoyal/kitty")
-	       (commit (string-append "v" version))))
-	(file-name (git-file-name name version))
-	(sha256 (base32 "13qv4469q9q2xdrb77lbyw4dz491zf1qvqx4adp0dd9annnlir5c"))))
     (build-system copy-build-system)
     (arguments
       '(#:install-plan
 	'(("terminfo/" "share/terminfo/"))))
-    (synopsis "synopsis")
-    (description "description")
-    (home-page "homepage")
-    (license license:gpl3+)))
+    (native-inputs `())
+    (inputs `())))
 
 (home-environment
   ;; Below is the list of packages that will show up in your
