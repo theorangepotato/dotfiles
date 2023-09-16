@@ -56,7 +56,7 @@
   ;; Home profile, under ~/.guix-home/profile.
   (packages (append
 	      (map (compose list specification->package+output)
-		   (list "sdcv" "git" "fish" "exa" "fd" "neovim" "bat" "curl" "ripgrep"))
+		   (list "sdcv" "git" "fish" "exa" "fd" "neovim" "bat" "curl" "ripgrep" "less"))
 	      (list collaborative-dictionary-stardict kitty-terminfo)))
 
   ;; Below is the list of Home services.  To search for available
@@ -65,7 +65,7 @@
    (list (service home-fish-service-type
                   (home-fish-configuration
                    (aliases '( ; ("btm" . "btm --battery")
-                              ("cat" . "bat -p --pager=\"less -XR\"")
+                              ("cat" . "bat -p --pager='less -XR'")
                               ("clh" . "history -c && exit")
                               ("dict" . "sdcv")
                               ; ("diff" . "diff --color=auto")
