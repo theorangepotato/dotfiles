@@ -7,7 +7,7 @@
     # base
     stow
     man
-    rigrep
+    ripgrep
     fd
     fzf
     exa
