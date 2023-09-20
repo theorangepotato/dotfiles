@@ -143,7 +143,9 @@ function fx {
 }
 
 # Enable fzf key bindings
-source /usr/share/doc/fzf/examples/key-bindings.bash
+if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
+  source /usr/share/doc/fzf/examples/key-bindings.bash
+fi
 
 # Set CTRL+Backspace to be werase instead of CTRL+W
 stty werase ^H
