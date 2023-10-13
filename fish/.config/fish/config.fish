@@ -14,6 +14,8 @@ end
 
 fish_vi_key_bindings
 
+set -g fish_greeting
+
 if type -q nvim
     set -gx EDITOR nvim
 end
