@@ -10,10 +10,11 @@
     ripgrep
     fd
     fzf
-    exa
+    # exa
     bat
     openssh
     which
+    ncdu
 
     # productivity
     git
