@@ -7,12 +7,19 @@ in
 
   nixpkgs.config.allowUnfree = true;
 
-  home.packages = [
-    pkgs.keepassxc
-    pkgs.signal-desktop
-    pkgs.evolution
-    pkgs.steam
-    pkgs.nextcloud-client
+  home.packages = with pkgs; [
+    firefox
+    restic
+    keepassxc
+    signal-desktop
+    evolution
+    nextcloud-client
+    calibre
+    prismlauncher
+    libreoffice
+    # Spellcheck and dictionary for LibreOffice
+    hunspell
+    hunspellDicts.en_US
   ];
 
   programs.kitty = {
