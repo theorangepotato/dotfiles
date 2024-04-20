@@ -15,6 +15,7 @@
     openssh
     which
     ncdu
+    sysstat
 
     # productivity
     git
