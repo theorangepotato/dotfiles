@@ -39,7 +39,14 @@
     # '')
   ];
 
-  programs.fish.enable = true;
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = builtins.concatStringsSep "\n" [
+      (builtins.readFile ../../generic/.aliases)
+      "fish_vi_key_bindings"
+      "set -g fish_greeting"
+    ];
+  };
   programs.fzf.enableFishIntegration = true;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
