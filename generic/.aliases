@@ -1,8 +1,9 @@
 # Aliases
-alias upgr='sudo apt update; sudo apt -y upgrade && sudo apt -y autoremove; flatpak update -y; cargo install-update -ag; fwupdmgr update'
-alias upgr4='sudo apt-get -o Acquire::ForceIPv4=true update && sudo apt-get -y -o Acquire::ForceIPv4=true upgrade && sudo apt-get -y -o Acquire::ForceIPv4=true autoremove'
-alias inst='sudo apt -y install'
+# alias upgr='sudo apt update; sudo apt -y upgrade && sudo apt -y autoremove; flatpak update -y; cargo install-update -ag; fwupdmgr update'
+# alias upgr4='sudo apt-get -o Acquire::ForceIPv4=true update && sudo apt-get -y -o Acquire::ForceIPv4=true upgrade && sudo apt-get -y -o Acquire::ForceIPv4=true autoremove'
+# alias inst='sudo apt -y install'
 # alias fd='fdfind'
+alias hmup="home-manager switch -f /home/$(whoami)/.dotfiles/nix/home-manager/$(hostname).nix"
 alias dict='sdcv'
 alias vi='nvim'
 alias vim='nvim'
