@@ -16,6 +16,7 @@
     which
     ncdu
     sysstat
+    bottom
 
     # productivity
     git
