@@ -41,6 +41,10 @@
     # '')
   ];
 
+  # Alternative import of the fish config file
+  # programs.fish.shellInit = (builtins.readFile ../../../fish/.config/fish/config.fish);
+  # programs.fish.interactiveShellInit = "set -g fish_greeting";
+
   programs.fish = {
     enable = true;
     interactiveShellInit = builtins.concatStringsSep "\n" [
