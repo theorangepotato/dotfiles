@@ -16,6 +16,8 @@
     nextcloud-client
     calibre
     prismlauncher
+    electrum
+    zotero
     libreoffice
     # Spellcheck and dictionary for LibreOffice
     hunspell
