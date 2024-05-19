@@ -19,6 +19,11 @@
     electrum
     zotero
     libreoffice
+    qjackctl
+    sshuttle
+    transmission-gtk
+    mpv
+    vlc
     # Spellcheck and dictionary for LibreOffice
     hunspell
     hunspellDicts.en_US
