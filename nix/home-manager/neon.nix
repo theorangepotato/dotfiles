@@ -9,6 +9,8 @@
 
   home.packages = with pkgs; [
     firefox
+    /* google-chrome */
+    chromium
     restic
     keepassxc
     signal-desktop
@@ -18,12 +20,14 @@
     prismlauncher
     electrum
     zotero
-    libreoffice
     qjackctl
     sshuttle
     transmission-gtk
     mpv
     vlc
+    spotify
+    planify
+    libreoffice
     # Spellcheck and dictionary for LibreOffice
     hunspell
     hunspellDicts.en_US
