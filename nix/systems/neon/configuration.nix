@@ -88,6 +88,7 @@
       git
       neovim
     ];
+    shell = pkgs.fish;
   };
 
   # Allow unfree packages
