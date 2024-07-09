@@ -10,6 +10,15 @@
       ./hardware-configuration.nix
     ];
 
+  # Enable support for Xbox One wireless controllers
+  hardware.xpadneo.enable = true;
+  hardware.bluetooth.settings = {
+    General = {
+      ControllerMode = "dual";
+      JustWorksRepairing = "confirm";
+    };
+  };
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -130,11 +139,13 @@
     };
   };
 
+  programs.steam.enable = true;
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
