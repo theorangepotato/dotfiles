@@ -22,7 +22,7 @@
     zotero
     qjackctl
     sshuttle
-    transmission-gtk
+    transmission_4-gtk
     mpv
     vlc
     spotify
