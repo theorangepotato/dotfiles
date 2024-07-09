@@ -17,6 +17,7 @@
     ncdu
     sysstat
     bottom
+    unzip
 
     # productivity
     git
