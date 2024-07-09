@@ -93,7 +93,7 @@
     description = "krypton";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
-    shell = pkgs.shell;
+    shell = pkgs.fish;
     openssh.authorizedKeys.keys = [
       "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCnTDxBQgin94aR2JUOSvF45ZSLaij5yRVmVRwEvZVSl2jY3CWRGtMAheYX6/t1Htx+WsKgYLCdrATQ2WN3YAXlaJsOqx324s6AV2O6v3tS+/6H+MDYxiE1WwKxulQ657gLegOi6DVmUgvY+1sp2IZ8SRvLHjJVL7U8pM2My8YH3PC63+5VWAP/qzKGZcKiTmKHKSotUQWVwmAHdRo9HU19DFjBR8Ulech02j15UcnplZ0LGs+29Vjn1zdwGFcR6Vow3nQFIDBKMkB0ZMlT2EX3WbE1yrKZ6OjxYG0MO4I8tq1Pr1eGUQnt0bBHyASDWwSbf3EtmtbU+7xxdDjc15CwYqYC3vwdA3SP40Hu+vZStgFsvu9y99Zq0WGnwIbdxcaEmyuFTKovUBksaX9K+KQmEuNvAvDBozKByn8Yh3CbkcuEtsmsYcjQ9zCKYrPhy7S3PUCxfEyPlNEGTsXyPlqVgoR0a34SK1UtBY8MK41OXmccHExWdXhCQYeOzreNJ8="
     ];
@@ -139,6 +139,7 @@
     };
   };
 
+  programs.fish.enable = true;
   programs.steam.enable = true;
 
   # Open ports in the firewall.
