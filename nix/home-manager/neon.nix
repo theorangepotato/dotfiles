@@ -62,6 +62,7 @@ in
     vlc
     spotify
     planify
+    gnomeExtensions.gsconnect
     libreoffice
     # Spellcheck and dictionary for LibreOffice
     hunspell

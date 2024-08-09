@@ -1,4 +1,4 @@
-{...}:
+{ pkgs, ...}:
 let
 background_image = ../../artifacts/axolotl-devbang.jpeg;
 in
@@ -7,6 +7,10 @@ in
   dconf.settings = {
     "org/gnome/shell" = {
       favorite-apps = ["firefox.desktop" "kitty.desktop" "nautilus.desktop"];
+      disable-user-extensions = false;
+      enabled-extensions = [
+        pkgs.gnomeExtensions.gsconnect.extensionUuid
+      ];
     };
     "org/gnome/shell/app-switcher" = {
       current-workspace-only = true;
