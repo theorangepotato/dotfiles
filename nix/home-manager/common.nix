@@ -21,7 +21,6 @@
 
     # productivity
     git
-    neovim
     zellij
 
     # fun
@@ -55,6 +54,37 @@
     ];
   };
   programs.fzf.enableFishIntegration = true;
+
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+    extraConfig = ''
+      set number
+      set relativenumber
+      set linebreak
+      set showbreak=+++
+      set showmatch
+      syntax on
+
+      set hlsearch
+      set smartcase
+      set ignorecase
+      set incsearch
+
+      set autoindent
+      set shiftwidth=4
+      " set smartindent
+
+      set ruler
+
+      set undolevels=1000
+      set backspace=indent,eol,start
+
+      " make Y consistent with C and D.
+      nnoremap Y y$
+    '';
+  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
