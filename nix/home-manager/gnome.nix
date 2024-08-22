@@ -6,7 +6,7 @@ in
   # https://heywoodlh.io/nixos-gnome-settings-and-keyboard-shortcuts
   dconf.settings = {
     "org/gnome/shell" = {
-      favorite-apps = ["firefox.desktop" "kitty.desktop" "nautilus.desktop"];
+      favorite-apps = ["firefox.desktop" "kitty.desktop" "nautilus.desktop" "steam.desktop"];
       disable-user-extensions = false;
       enabled-extensions = [
         pkgs.gnomeExtensions.gsconnect.extensionUuid
