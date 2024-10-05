@@ -22,6 +22,7 @@
     # productivity
     git
     zellij
+    jujutsu
 
     # fun
     cbonsai
