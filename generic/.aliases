@@ -4,6 +4,8 @@
 # alias inst='sudo apt -y install'
 # alias fd='fdfind'
 alias hmup="home-manager switch -f /home/$(whoami)/.dotfiles/nix/home-manager/$(hostname).nix"
+alias nupgr="sudo nix-channel --update && sudo nixos-rebuild boot && home-manager switch -f /home/$(whoami)/.dotfiles/nix/home-manager/$(hostname).nix && nix-collect-garbage --delete-older-than 7d && sudo fwupdmgr update"
+alias clearboot='sudo nix-env -p /nix/var/nix/profiles/system --delete-generations +2 && nix-collect-garbage -d'
 alias dict='sdcv'
 alias vi='nvim'
 alias vim='nvim'
