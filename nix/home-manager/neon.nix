@@ -82,7 +82,9 @@ in
     };
   };
 
-  home.file = autostartPrograms [ pkgs.keepassxc pkgs.signal-desktop pkgs.nextcloud-client pkgs.joplin-desktop pkgs.evolution ];
+  home.file = {
+    ".config/evolution/accels".source = ../../evolution/.config/evolution/accels;
+  } // autostartPrograms [ pkgs.keepassxc pkgs.signal-desktop pkgs.nextcloud-client pkgs.joplin-desktop pkgs.evolution ];
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
