@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      <home-manager/nixos>
     ];
 
   # Bootloader.
@@ -89,6 +90,8 @@
     ];
     shell = pkgs.fish;
   };
+
+  home-manager.users.austin = ../../home-manager/neon.nix;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
