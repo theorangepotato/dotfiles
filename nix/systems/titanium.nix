@@ -1,5 +1,9 @@
 { config, lib, pkgs, ... }:
 {
+  imports = [
+    ./npins-common.nix
+  ];
+
   # Packages to install system-wide
   environment.packages = with pkgs; [
     diffutils

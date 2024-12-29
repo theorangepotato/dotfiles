@@ -4,14 +4,12 @@
 
 { config, pkgs, ... }:
 
-let
-  sources = import ../../npins;
-in
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       <home-manager/nixos>
+      ../npins-common.nix
     ];
 
   # Bootloader.
@@ -101,14 +99,6 @@ in
 
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # Set <nixpkgs> to track npins and set configuration to live in the git repo
-  nix.registry.nixpkgs.to = {
-    type = "path";
-    path = sources.nixpkgs;
-  };
-  nix.nixPath = [ "nixpkgs=flake:nixpkgs" ("nixos-config=" + toString ./. + "/configuration.nix") "/nix/var/nix/profiles/per-user/root/channels" ];
-
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

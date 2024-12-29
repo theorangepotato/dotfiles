@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../npins-common.nix
     ];
 
   # Enable support for Xbox One wireless controllers

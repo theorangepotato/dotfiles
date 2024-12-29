@@ -12,6 +12,18 @@
       "url": "https://github.com/nix-community/home-manager/archive/10e99c43cdf4a0713b4e81d90691d22c6a58bdf2.tar.gz",
       "hash": "1vklmr0vzhplcjcqg19v66c1swg3xcgw96ry90dyd4hl2cb9j80b"
     },
+    "nix-on-droid": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "nix-on-droid"
+      },
+      "branch": "master",
+      "revision": "5d88ff2519e4952f8d22472b52c531bb5f1635fc",
+      "url": "https://github.com/nix-community/nix-on-droid/archive/5d88ff2519e4952f8d22472b52c531bb5f1635fc.tar.gz",
+      "hash": "1z411zdzmdp7d2408rf62nwh2gdfi2lzlfsmndlpxxkwdgh76vrz"
+    },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixos-unstable",
