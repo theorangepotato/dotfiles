@@ -83,7 +83,7 @@
   users.users.austin = {
     isNormalUser = true;
     description = "Austin";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" ];
     packages = with pkgs; [
       git
       neovim
