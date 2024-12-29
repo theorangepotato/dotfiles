@@ -113,6 +113,12 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Enable flakes
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  # Set NIX_PATH
+  nix.nixPath = [ ("nixos-config=" + toString ./. + "/configuration.nix") ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [

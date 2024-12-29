@@ -9,5 +9,5 @@ in
     type = "path";
     path = sources.nixpkgs;
   };
-  nix.nixPath = [ "nixpkgs=flake:nixpkgs" ("nixos-config=" + toString ./. + "/configuration.nix") "nix-on-droid=${sources.nix-on-droid}" ];
+  nix.nixPath = [ "nixpkgs=flake:nixpkgs" ];
 }

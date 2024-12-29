@@ -1,8 +1,14 @@
 { config, lib, pkgs, ... }:
+let
+  sources = import ../npins;
+in
 {
   imports = [
     ./npins-common.nix
   ];
+
+  # Set NIX_PATH
+  nix.nixPath = [ ("nixos-config=" + toString ./. + "/titanium.nix") "nix-on-droid=${sources.nix-on-droid}" ];
 
   # Packages to install system-wide
   environment.packages = with pkgs; [
