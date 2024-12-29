@@ -22,7 +22,6 @@
     # productivity
     git
     zellij
-    jujutsu
 
     # fun
     cbonsai
@@ -87,6 +86,20 @@
     '';
   };
 
+  programs.jujutsu = {
+    enable = true;
+    settings = {
+      user = {
+        name = "Austin Bohannon";
+        email = "github@alphahotelbravo.io";
+      };
+      ui = {
+        default-command = "log";
+      };
+    };
+  };
+
+
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
@@ -114,6 +127,7 @@
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
     EDITOR = "nvim";
+    PAGER = "bat";
   };
 
   # Let Home Manager install and manage itself.
