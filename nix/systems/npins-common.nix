@@ -4,10 +4,12 @@ let
   sources = import ../npins;
 in
 {
-  # Set <nixpkgs> to track npins and set configuration to live in the git repo
+  # Set flake's nixpkgs
   nix.registry.nixpkgs.to = {
     type = "path";
     path = sources.nixpkgs;
   };
-  nix.nixPath = [ "nixpkgs=flake:nixpkgs" ];
+
+  # Set <nixpkgs> and <home-manager> to track npins
+  nix.nixPath = [ "nixpkgs=${sources.nixpkgs}" "home-manager=${sources.home-manager}" ];
 }

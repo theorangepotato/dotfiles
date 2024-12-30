@@ -1,14 +1,14 @@
 { config, lib, pkgs, ... }:
 let
-  sources = import ../npins;
+  sources = import ../../npins;
 in
 {
   imports = [
-    ./npins-common.nix
+    ../npins-common.nix
   ];
 
-  # Set NIX_PATH
-  nix.nixPath = [ ("nixos-config=" + toString ./. + "/titanium.nix") "nix-on-droid=${sources.nix-on-droid}" ];
+  # Set nixos-config in NIX_PATH to the current file and set <nix-on-droid> to track npins
+  nix.nixPath = [ ("nixos-config=" + toString ./. + "/configuration.nix") "nix-on-droid=${sources.nix-on-droid}" ];
 
   # Packages to install system-wide
   environment.packages = with pkgs; [
@@ -32,7 +32,7 @@ in
   home-manager = {
     #  useGlobalPkgs = true;
 
-    config = ../home-manager/titanium.nix;
+    config = ../../home-manager/titanium.nix;
   };
 
   # Set your time zone

@@ -100,7 +100,7 @@
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Set NIX_PATH
+  # Set nixos-config in NIX_PATH to the current file
   nix.nixPath = [ ("nixos-config=" + toString ./. + "/configuration.nix") ];
 
   # List packages installed in system profile. To search, run:
