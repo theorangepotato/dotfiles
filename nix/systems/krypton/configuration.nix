@@ -34,6 +34,11 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  services.mullvad-vpn = {
+    enable = true;
+    package = pkgs.mullvad-vpn;
+  };
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
