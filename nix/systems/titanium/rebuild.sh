@@ -20,4 +20,4 @@ nix_path="nixpkgs=${nixpkgs_pin}:home-manager=${homemanager_pin}:nix-on-droid=${
 # without --fast, nix-on-droid will compile nix and use the compiled nix to
 # evaluate the config, wasting several seconds
 echo "Performing $cmd..."
-NIX_PATH="${nix_path}" nix-on-droid "$cmd" --fast "$@"
+NIX_PATH="${nix_path}" nix-on-droid -f ./configuration.nix "$cmd" "$@"
