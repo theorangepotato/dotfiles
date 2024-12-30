@@ -8,9 +8,9 @@ cd $(dirname $0)
 cmd=${1:-switch}
 shift
 
-nixpkgs_pin=$(nix eval --raw -f ../npins/default.nix nixpkgs)
-homemanager_pin=$(nix eval --raw -f ../npins/default.nix home-manager)
-nixondroid_pin=$(nix eval --raw -f ../npins/default.nix nix-on-droid)
+nixpkgs_pin=$(nix eval --raw -f ../../npins/default.nix nixpkgs)
+homemanager_pin=$(nix eval --raw -f ../../npins/default.nix home-manager)
+nixondroid_pin=$(nix eval --raw -f ../../npins/default.nix nix-on-droid)
 nix_path="nixpkgs=${nixpkgs_pin}:home-manager=${homemanager_pin}:nix-on-droid=${nixondroid_pin}:nixos-config=${PWD}/configuration.nix"
 
 # without --fast, nixos-rebuild will compile nix and use the compiled nix to
