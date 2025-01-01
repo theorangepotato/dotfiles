@@ -46,6 +46,8 @@ in
   # Backup etc files instead of failing to activate generation if a file already exists in /etc
   environment.etcBackupExtension = ".bak";
 
+  environment.motd = null;
+
   # Read the changelog before changing this value
   system.stateVersion = "23.05";
 }
