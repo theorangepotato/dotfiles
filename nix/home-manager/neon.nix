@@ -63,6 +63,7 @@ in
     spotify
     planify
     gnomeExtensions.gsconnect
+    gimp
     libreoffice
     # Spellcheck and dictionary for LibreOffice
     hunspell
