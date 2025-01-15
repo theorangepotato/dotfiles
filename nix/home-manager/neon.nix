@@ -64,6 +64,7 @@ in
     planify
     gnomeExtensions.gsconnect
     gimp
+    steam
     libreoffice
     # Spellcheck and dictionary for LibreOffice
     hunspell
