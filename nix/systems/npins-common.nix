@@ -11,5 +11,5 @@ in
   };
 
   # Set <nixpkgs> and <home-manager> to track npins
-  nix.nixPath = [ "nixpkgs=${sources.nixpkgs}" "home-manager=${sources.home-manager}" ];
+  nix.nixPath = [ "nixpkgs=${sources.nixpkgs}" "home-manager=${sources.home-manager}" "nixos-hardware=${sources.nixos-hardware}" ];
 }

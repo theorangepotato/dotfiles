@@ -24,6 +24,18 @@
       "url": "https://github.com/nix-community/nix-on-droid/archive/5d88ff2519e4952f8d22472b52c531bb5f1635fc.tar.gz",
       "hash": "1z411zdzmdp7d2408rf62nwh2gdfi2lzlfsmndlpxxkwdgh76vrz"
     },
+    "nixos-hardware": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "nixos-hardware"
+      },
+      "branch": "master",
+      "revision": "3e2ea8a49d4d76276b0f4e2041df8ca5c0771371",
+      "url": "https://github.com/nixos/nixos-hardware/archive/3e2ea8a49d4d76276b0f4e2041df8ca5c0771371.tar.gz",
+      "hash": "1zkwzz3gycadad5yvzglpcll4a66nl5gnzz9n6l4ch6v6sdaja0v"
+    },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixos-unstable",

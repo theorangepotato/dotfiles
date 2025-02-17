@@ -12,8 +12,10 @@ echo "Evaluating nixpkgs..."
 nixpkgs_pin=$(nix eval --raw -f ../npins/default.nix nixpkgs)
 echo "Evaluating home-manager..."
 homemanager_pin=$(nix eval --raw -f ../npins/default.nix home-manager)
+echo "Evaluating nixos-hardware..."
+nixoshardware_pin=$(nix eval --raw -f ../npins/default.nix nixos-hardware)
 
-nix_path="nixpkgs=${nixpkgs_pin}:home-manager=${homemanager_pin}:nixos-config=${PWD}/$(hostname)/configuration.nix"
+nix_path="nixpkgs=${nixpkgs_pin}:home-manager=${homemanager_pin}:nixos-hardware=${nixoshardware_pin}:nixos-config=${PWD}/$(hostname)/configuration.nix"
 
 # without --fast, nixos-rebuild will compile nix and use the compiled nix to
 # evaluate the config, wasting several seconds
