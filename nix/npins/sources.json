@@ -8,9 +8,9 @@
         "repo": "home-manager"
       },
       "branch": "master",
-      "revision": "801ddd8693481866c2cfb1efd44ddbae778ea572",
-      "url": "https://github.com/nix-community/home-manager/archive/801ddd8693481866c2cfb1efd44ddbae778ea572.tar.gz",
-      "hash": "09hj98831m5ihrgr5dp54an06wlicwrib4p4m7imj3k1cdmm4mws"
+      "revision": "6c93eea85daddd0dc8d4a3a687473461f3122961",
+      "url": "https://github.com/nix-community/home-manager/archive/6c93eea85daddd0dc8d4a3a687473461f3122961.tar.gz",
+      "hash": "1yhn9jrlxlhk8wixp700qsa27vjd259pc1hv4x2bcajnv5qyjy5q"
     },
     "nix-on-droid": {
       "type": "Git",
@@ -39,8 +39,8 @@
     "nixpkgs": {
       "type": "Channel",
       "name": "nixos-unstable",
-      "url": "https://releases.nixos.org/nixos/unstable/nixos-25.05beta745286.9d3ae807ebd2/nixexprs.tar.xz",
-      "hash": "01n74f9kan5z6bbkkal0mzfbb259iy3hb7m22v8vld99wbpvbypn"
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-25.05beta754461.d74a2335ac9c/nixexprs.tar.xz",
+      "hash": "15jism3mcba9bmxh1b4zgc8ln3vyanclf2w6n2gf342hl314phvb"
     }
   },
   "version": 3
