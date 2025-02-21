@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     # nix
     npins
+    comma
     # base
     stow
     man
