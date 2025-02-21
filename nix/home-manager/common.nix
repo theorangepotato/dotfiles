@@ -54,6 +54,7 @@
       (builtins.readFile ../../generic/.aliases)
       "fish_vi_key_bindings"
       "set -g fish_greeting"
+      "${pkgs.any-nix-shell}/bin/any-nix-shell fish --info-right | source"
     ];
   };
   programs.fzf.enableFishIntegration = true;
