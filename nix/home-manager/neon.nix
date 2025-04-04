@@ -58,6 +58,7 @@ in
     qjackctl
     sshuttle
     transmission_4-gtk
+    yt-dlp
     mpv
     vlc
     spotify
