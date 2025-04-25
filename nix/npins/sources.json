@@ -8,9 +8,10 @@
         "repo": "home-manager"
       },
       "branch": "master",
-      "revision": "79461936709b12e17adb9c91dd02d1c66d577f09",
-      "url": "https://github.com/nix-community/home-manager/archive/79461936709b12e17adb9c91dd02d1c66d577f09.tar.gz",
-      "hash": "1gr63ybi8js6rwwj8pgyzsfbjhd7iarb6ic2vw3yq9vm89xjkrmd"
+      "submodules": false,
+      "revision": "abfad3d2958c9e6300a883bd443512c55dfeb1be",
+      "url": "https://github.com/nix-community/home-manager/archive/abfad3d2958c9e6300a883bd443512c55dfeb1be.tar.gz",
+      "hash": "0nx49bs1b23ssfd7vwd5v5a6w6s7d4pbxsrbp3ymjsslizda3431"
     },
     "nix-on-droid": {
       "type": "Git",
@@ -20,6 +21,7 @@
         "repo": "nix-on-droid"
       },
       "branch": "master",
+      "submodules": false,
       "revision": "5d88ff2519e4952f8d22472b52c531bb5f1635fc",
       "url": "https://github.com/nix-community/nix-on-droid/archive/5d88ff2519e4952f8d22472b52c531bb5f1635fc.tar.gz",
       "hash": "1z411zdzmdp7d2408rf62nwh2gdfi2lzlfsmndlpxxkwdgh76vrz"
@@ -32,16 +34,17 @@
         "repo": "nixos-hardware"
       },
       "branch": "master",
-      "revision": "de6fc5551121c59c01e2a3d45b277a6d05077bc4",
-      "url": "https://github.com/nixos/nixos-hardware/archive/de6fc5551121c59c01e2a3d45b277a6d05077bc4.tar.gz",
-      "hash": "0yi5jb00zrlads7p00cp9cg74bxa6x1006wqcl6n2bhj6h6b3xvg"
+      "submodules": false,
+      "revision": "f7bee55a5e551bd8e7b5b82c9bc559bc50d868d1",
+      "url": "https://github.com/nixos/nixos-hardware/archive/f7bee55a5e551bd8e7b5b82c9bc559bc50d868d1.tar.gz",
+      "hash": "1311w59q8rcjnj8415z1pjlz5c1lsfrgxz9wg78fgc6mlfys6hbd"
     },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixos-unstable",
-      "url": "https://releases.nixos.org/nixos/unstable/nixos-25.05pre780821.c8cd81426f45/nixexprs.tar.xz",
-      "hash": "02xbm5wd706ili23n0cvydcvi02xpzk0q7zdacknml69dnva68sb"
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-25.05pre788136.8a2f738d9d1f/nixexprs.tar.xz",
+      "hash": "1jm1r7bjz819xfa2zd9bw9xr3wdlfvasvp233vk10kfdnlbn0fyf"
     }
   },
-  "version": 3
+  "version": 5
 }
