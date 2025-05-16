@@ -55,7 +55,7 @@ in
     prismlauncher
     electrum
     zotero
-    qjackctl
+    helvum
     sshuttle
     transmission_4-gtk
     yt-dlp
