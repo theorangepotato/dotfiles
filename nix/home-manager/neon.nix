@@ -62,7 +62,8 @@ in
     mpv
     vlc
     spotify
-    planify
+    /* planify is broken until https://github.com/NixOS/nixpkgs/issues/407969 is fixed */
+    # planify
     gnomeExtensions.gsconnect
     gimp
     steam
