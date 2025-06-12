@@ -9,9 +9,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "f9186c64fcc6ee5f0114547acf9e814c806a640b",
-      "url": "https://github.com/nix-community/home-manager/archive/f9186c64fcc6ee5f0114547acf9e814c806a640b.tar.gz",
-      "hash": "0gnhicmsg8gwhxdcpwr8xwwss76r0iy4xbmjv2xdr19193i73mdm"
+      "revision": "faeab32528a9360e9577ff4082de2d35c6bbe1ce",
+      "url": "https://github.com/nix-community/home-manager/archive/faeab32528a9360e9577ff4082de2d35c6bbe1ce.tar.gz",
+      "hash": "0bpi9mm38sjlyvz9w4hxl9q0bn4g29hhs7h7hsq1h6x1gdlabf20"
     },
     "nix-on-droid": {
       "type": "Git",
@@ -35,15 +35,15 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "2b9118883d29290a1b16ae3a12aedc478dae2546",
-      "url": "https://github.com/nixos/nixos-hardware/archive/2b9118883d29290a1b16ae3a12aedc478dae2546.tar.gz",
-      "hash": "146y0mdb90wq4n74sikx775sg0lsw8jg5wbl72hhrm105v2310zl"
+      "revision": "4602f7e1d3f197b3cb540d5accf5669121629628",
+      "url": "https://github.com/nixos/nixos-hardware/archive/4602f7e1d3f197b3cb540d5accf5669121629628.tar.gz",
+      "hash": "1qq9gb0rxw43l2hhdnbf6c24r6051nhnqv7z72zxd79fg108m4av"
     },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixos-unstable",
-      "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre803506.2795c506fe8f/nixexprs.tar.xz",
-      "hash": "1pw5x6p76mxsr79l94dnh0gsis7p1qqicbaf8jc7w124vggv4hzg"
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre811950.3e3afe5174c5/nixexprs.tar.xz",
+      "hash": "0pfy3xklhz1jcg4ap0vnckash9l0shqfk619sv2bn9lx8rxr9359"
     }
   },
   "version": 5
