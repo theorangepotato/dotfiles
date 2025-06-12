@@ -55,6 +55,7 @@ in
     prismlauncher
     electrum
     zotero
+    anki
     helvum
     sshuttle
     transmission_4-gtk
