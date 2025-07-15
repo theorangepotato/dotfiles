@@ -17,7 +17,7 @@ nixoshardware_pin=$(nix eval --raw -f ../npins/default.nix nixos-hardware)
 
 nix_path="nixpkgs=${nixpkgs_pin}:home-manager=${homemanager_pin}:nixos-hardware=${nixoshardware_pin}:nixos-config=${PWD}/$(hostname)/configuration.nix"
 
-# without --fast, nixos-rebuild will compile nix and use the compiled nix to
+# without --no-reexec, nixos-rebuild will compile nix and use the compiled nix to
 # evaluate the config, wasting several seconds
 echo "Performing $cmd..."
-sudo env NIX_PATH="${nix_path}" nixos-rebuild "$cmd" --fast "$@"
+sudo env NIX_PATH="${nix_path}" nixos-rebuild "$cmd" --no-reexec "$@"
