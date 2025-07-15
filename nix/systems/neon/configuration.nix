@@ -84,7 +84,7 @@
   users.users.austin = {
     isNormalUser = true;
     description = "Austin";
-    extraGroups = [ "networkmanager" "wheel" "dialout" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "adbusers" ];
     packages = with pkgs; [
       git
       neovim
@@ -112,6 +112,7 @@
 
   programs.fish.enable = true;
   programs.steam.enable = true;
+  programs.adb.enable = true;
 
   services.mullvad-vpn = {
     enable = true;
