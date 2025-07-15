@@ -66,6 +66,8 @@ in
     /* planify is broken until https://github.com/NixOS/nixpkgs/issues/407969 is fixed */
     # planify
     gnomeExtensions.gsconnect
+    gnomeExtensions.appindicator
+    gnomeExtensions.media-controls
     gimp
     steam
     libreoffice

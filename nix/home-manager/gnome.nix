@@ -8,8 +8,11 @@ in
     "org/gnome/shell" = {
       favorite-apps = ["firefox.desktop" "kitty.desktop" "nautilus.desktop" "steam.desktop"];
       disable-user-extensions = false;
-      enabled-extensions = [
-        pkgs.gnomeExtensions.gsconnect.extensionUuid
+      disabled-extensions = [];
+      enabled-extensions = with pkgs; [
+        gnomeExtensions.gsconnect.extensionUuid
+	gnomeExtensions.appindicator.extensionUuid
+	gnomeExtensions.media-controls.extensionUuid
       ];
     };
     "org/gnome/shell/app-switcher" = {
