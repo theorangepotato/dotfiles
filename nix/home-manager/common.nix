@@ -100,6 +100,7 @@
       ui = {
         default-command = "log";
       };
+      diff.color-words.conflict = "pair";
     };
   };
 
