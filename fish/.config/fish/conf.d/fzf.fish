@@ -1,1 +1,2 @@
-fzf --fish | source
+fzf_key_bindings
+# fzf --fish | source
