@@ -57,7 +57,10 @@
       "${pkgs.any-nix-shell}/bin/any-nix-shell fish --info-right | source"
     ];
   };
-  programs.fzf.enableFishIntegration = true;
+  programs.fzf = {
+    enable = true;
+    enableFishIntegration = true;
+  };
 
   programs.neovim = {
     enable = true;
